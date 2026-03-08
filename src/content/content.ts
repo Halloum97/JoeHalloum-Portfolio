@@ -1,22 +1,16 @@
 export type SkillGroup = { title: string; items: string[] };
 
-export type ProjectVideo = {
-  provider: "mux";
-  playbackId: string; // Set this after uploading to Mux
-  teaserStartTime?: number; // seconds
-  posterTime?: number; // seconds
-};
-
 export type Project = {
   id: string;
   title: string;
   summary: string;
   tags: string[];
+  image: string;
+  youtubeUrl?: string;
   links: {
     repo?: string;
     live?: string;
   };
-  video?: ProjectVideo;
 };
 
 export type Content = {
@@ -74,15 +68,11 @@ export const content: Content = {
       summary:
         "Chat app with a special feature to automate changing your profile picture.",
       tags: ["React", "TypeScript", "Node.js", "WebSockets", "Firestore"],
+      image: "/projects/chatapp.jpg",
+      youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       links: {
         repo: "https://github.com/Halloum97/chatapp",
         live: "",
-      },
-      video: {
-        provider: "mux",
-        playbackId: "REPLACE_ME",
-        teaserStartTime: 2,
-        posterTime: 1,
       },
     },
     {
@@ -91,15 +81,11 @@ export const content: Content = {
       summary:
         "Website assistant that answers visitors using your website information and provides helpful links and guidance.",
       tags: ["Next.js", "Node.js", "RAG", "Embeddings", "Vector Search", "AWS"],
+      image: "/projects/ai-chat-agent.jpg",
+      youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       links: {
         repo: "https://github.com/Halloum97/ai-chat-agent",
         live: "",
-      },
-      video: {
-        provider: "mux",
-        playbackId: "REPLACE_ME",
-        teaserStartTime: 3,
-        posterTime: 2,
       },
     },
     {
@@ -108,15 +94,11 @@ export const content: Content = {
       summary:
         "Innovative startup-style website design with polished motion, glass, and aurora visuals.",
       tags: ["Next.js", "Tailwind", "Motion", "Glassmorphism", "Performance"],
+      image: "/projects/startup-tech-site.jpg",
+      youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
       links: {
         repo: "https://github.com/Halloum97/startup-tech-site",
         live: "",
-      },
-      video: {
-        provider: "mux",
-        playbackId: "REPLACE_ME",
-        teaserStartTime: 2,
-        posterTime: 1,
       },
     },
   ],

@@ -14,7 +14,7 @@ export default function Contact() {
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(c.email);
-      setCopied(true);
+      setCopied(true);  
       setTimeout(() => setCopied(false), 1200);
     } catch {
       // ignore

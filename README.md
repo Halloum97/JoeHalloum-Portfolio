@@ -1,6 +1,6 @@
 # Joe Halloum — Portfolio
 
-Welcome to my personal portfolio project.
+Welcome to my personal portfolio project.-------=======
 
 I built this with **Next.js (App Router)** as a modern, performance-focused single-page experience where I can present my work, skills, and background in a clean and memorable way.
 
